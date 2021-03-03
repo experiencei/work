@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+body{
+   font-family: 'Commissioner', sans-serif;
+   margin: 0 auto;
+   padding: 0 auto;
+   box-sizing: border-box;
+} 
+#container{
+    background-color: rgb(15, 199, 181);
+    background-image: url(Terieye.jpg);
+    background-blend-mode:darken;
+    width: 69%;
+    max-width: 450rem;
+    height: 110%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(50% 0%, 80% 0, 100% 35%, 100% 70%, 79% 100%, 50% 100%, 19% 100%, 0% 70%, 0 1%, 0 0);
+    margin: 0 2em;
+}
+#calculator{
+   background-color: black;
+   width:50% ; 
+   margin: 0 auto;
+   height: 100vh;
+   margin-top: 1em;
+   box-shadow: 0 4px 8px 0 lawngreen,0 6px 20px 0 rgb(132, 0, 255) ;
+   border-radius: 1em;
+}
+#result{
+    height: 120px;
+    background-color: chartreuse;
+}
+#keyboard{
+    height: 400px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 1em;
+    font-size: 1.1rem;
+    color: #666565;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin:  10px;
+    font-size: 2.2rem;
+    background-color: rgb(61, 102, 19);
+    margin-top: .9em;
+}
+.operator , .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 2em;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: .8rem;
+    outline: none;
+}
+ .empty {
+    background-color: black;
+}
+.number , .operator {
+    cursor: pointer;
+}
+.number:active , .operator:active {
+    background-color: green;
+    color: white;
+}
+button:nth-child(4){
+    background-color: orchid;
+}
+button:nth-child(8){
+    background-color: orangered;
+}
+button:nth-child(12){
+    background-color: maroon;
+}
+button:nth-child(16){
+    background-color: tomato;
+}
+button:nth-child(19){
+    background-color: turquoise;
+}
